@@ -59,4 +59,9 @@ public class MapTester
     }
 }
 
-28. 
+28. if i add a new entry (the phone number) with a key ("john") that 
+already exists in the map (phoneBook, HashMap), the new value overrides 
+the former
+29. if i add two keys containing the same value, calling both will return 
+the same value
+30. 
