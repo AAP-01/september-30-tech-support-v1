@@ -29,6 +29,34 @@ as ArrayList, HashMap, HashSet, and Random.
 
 This project is only a first, rudimentary step towards the full solution.
 
-24. Map is used to store data more efficiently and quickly. HashMap is 
-based on Map
-25. 
+24. Map is used to store values. HashMap is based on Map
+25. isEmpty, containsValue, size, etc. I think both parameters can use 
+the same type
+26. By using the method size
+27. MapTester class:
+public class MapTester
+{
+    // instance variables - replace the example below with your own
+    private HashMap phoneBook;
+    
+    public MapTester()
+    {
+        phoneBook = new HashMap();
+    }
+    
+    public void enterNumber(String name, String number)
+    {
+        phoneBook.put(name,number);
+    }
+    
+    public String lookupNumber(String name)
+    {
+        if (phoneBook.containsKey(name))
+        {
+            return (String) phoneBook.get(name);
+        }
+        return null;
+    }
+}
+
+28. 
