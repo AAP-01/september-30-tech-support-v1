@@ -86,3 +86,9 @@ the same value
     }
 
 33. 
+34. Both HashSet and Arraylist belong to java.util and both are used to store values in a 
+growing list. However, HashSet uses a hash table while ArrayList uses a list
+35. Returning words on HashSet is significantly faster than returning from an ArrayList
+36. If two or more words were meant to have a space in-between, then adding more spaces won't 
+create an error
+37. 

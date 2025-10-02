@@ -46,4 +46,9 @@ public class MapTester
             System.out.println(key);
         }
     }
+    
+    public void fillResponsesMap()
+    {
+        
+    }
 }
