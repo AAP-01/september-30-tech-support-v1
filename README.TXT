@@ -57,11 +57,32 @@ public class MapTester
         }
         return null;
     }
+    
 }
 
-28. if i add a new entry (the phone number) with a key ("john") that 
+28. If i add a new entry (the phone number) with a key ("john") that 
 already exists in the map (phoneBook, HashMap), the new value overrides 
 the former
 29. if i add two keys containing the same value, calling both will return 
 the same value
-30. 
+30. lookupName method
+    public boolean lookupName(String name)
+    {
+        boolean nameInTheBook = false;
+        if (phoneBook.containsKey(name))
+        {
+            return nameInTheBook = true;
+        }
+        return nameInTheBook;
+    }
+    
+31. Calling a value that doesn't have a key in the mapp will return null
+32. listAllNames method
+    public void listAllNames()
+    {
+        for(String key : phoneBook.keySet()) {
+            System.out.println(key);
+        }
+    }
+
+33. 

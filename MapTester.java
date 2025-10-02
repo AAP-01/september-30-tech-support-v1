@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class MapTester
 {
     // instance variables - replace the example below with your own
-    private HashMap phoneBook;
+    private HashMap<String, String> phoneBook;
     
     public MapTester()
     {
@@ -28,5 +28,22 @@ public class MapTester
             return (String) phoneBook.get(name);
         }
         return null;
+    }
+    
+    public boolean lookupName(String name)
+    {
+        boolean nameInTheBook = false;
+        if (phoneBook.containsKey(name))
+        {
+            return nameInTheBook = true;
+        }
+        return nameInTheBook;
+    }
+    
+    public void listAllNames()
+    {
+        for(String key : phoneBook.keySet()) {
+            System.out.println(key);
+        }
     }
 }
